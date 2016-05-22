@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .DS_Store
 applet
 application.linux32
@@ -7,6 +8,8 @@ application.windows32
 application.windows64
 application.macosx
 =======
+=======
+>>>>>>> e43e3acc1b733c5771ed0965bed925ed7767f379
 .DS_Store
 applet
 application.linux32
@@ -14,4 +17,7 @@ application.linux64
 application.windows32
 application.windows64
 application.macosx
+<<<<<<< HEAD
 >>>>>>> branch 'master' of https://github.com/Gphoebus/space_invader.git
+=======
+>>>>>>> e43e3acc1b733c5771ed0965bed925ed7767f379
