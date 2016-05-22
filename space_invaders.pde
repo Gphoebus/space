@@ -99,14 +99,7 @@ void keyPressed(){
     monvaisseau.decremente();
   }
   if (keyCode== ' '){
-  int x_vaisseau=monvaisseau.get_x();
- int y_vaisseau=monvaisseau.get_y();
- if(missile!=0){
- lesmissile.add(new missile((x_vaisseau+17), y_vaisseau-1));
- missile--;
-
-   
- }
+tir();
 }
 if (keyCode==79){
   reprise= true;
@@ -147,4 +140,36 @@ texture[1]=loadImage("data/invader-vert_small.jpg");
 texture[2]=loadImage("data/Space Invaders 1.png");
 }
 
+void mouseClicked() {
+if (mouseX>600)
+{
+  println("gauche");
+  monvaisseau.incremente();
+  
+}
+if (mouseX<200)
+
+{
+  println("droite");
+  
+  monvaisseau.decremente();
+}
+
+if ((mouseX>200) && (mouseX<600))
+{
+  println("milieu");
+  tir();
+}
+}
+void tir()
+{
+   int x_vaisseau=monvaisseau.get_x();
+ int y_vaisseau=monvaisseau.get_y();
+ if(missile!=0){
+ lesmissile.add(new missile((x_vaisseau+17), y_vaisseau-1));
+ missile--;
+ 
+   
+ } 
+}
   
